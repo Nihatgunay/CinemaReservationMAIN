@@ -1,0 +1,17 @@
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\CinemaReservationMain.Data.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\CinemaReservationMain.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\CinemaReservationMain.Data.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\CinemaReservationMain.Data.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\CinemaReservationMain.Data.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\bin\Debug\net8.0\CinemaReservationMain.Data.deps.json
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\bin\Debug\net8.0\CinemaReservationMain.Data.dll
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\bin\Debug\net8.0\CinemaReservationMain.Data.pdb
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\bin\Debug\net8.0\CinemaReservationMain.Core.dll
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\bin\Debug\net8.0\CinemaReservationMain.Core.pdb
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\CinemaRe.866AFC26.Up2Date
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\CinemaReservationMain.Data.dll
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\refint\CinemaReservationMain.Data.dll
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\CinemaReservationMain.Data.pdb
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\ref\CinemaReservationMain.Data.dll
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\bin\Debug\net8.0\CinemaReservationMain.Data.runtimeconfig.json
+C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Data\obj\Debug\net8.0\CinemaReservationMain.Data.genruntimeconfig.cache

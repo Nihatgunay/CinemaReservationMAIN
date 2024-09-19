@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaReservationMain.Core", "CinemaReservationMain.Core\CinemaReservationMain.Core.csproj", "{97AF0C93-04F2-4288-8F30-7AD1EE00F821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaReservationMain.Business", "CinemaReservationMain.Business\CinemaReservationMain.Business.csproj", "{100CC03F-0A87-44F6-883D-C5560A774284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaReservationMain.Data", "CinemaReservationMain.Data\CinemaReservationMain.Data.csproj", "{27323CDA-E839-4918-9CF3-EE79B83F5CF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaReservationMain.Api", "CinemaReservationMain.Api\CinemaReservationMain.Api.csproj", "{F70CE73E-FB25-4F6C-939E-706E3EED7230}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97AF0C93-04F2-4288-8F30-7AD1EE00F821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97AF0C93-04F2-4288-8F30-7AD1EE00F821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97AF0C93-04F2-4288-8F30-7AD1EE00F821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97AF0C93-04F2-4288-8F30-7AD1EE00F821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100CC03F-0A87-44F6-883D-C5560A774284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100CC03F-0A87-44F6-883D-C5560A774284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100CC03F-0A87-44F6-883D-C5560A774284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100CC03F-0A87-44F6-883D-C5560A774284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27323CDA-E839-4918-9CF3-EE79B83F5CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27323CDA-E839-4918-9CF3-EE79B83F5CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27323CDA-E839-4918-9CF3-EE79B83F5CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27323CDA-E839-4918-9CF3-EE79B83F5CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70CE73E-FB25-4F6C-939E-706E3EED7230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70CE73E-FB25-4F6C-939E-706E3EED7230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70CE73E-FB25-4F6C-939E-706E3EED7230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70CE73E-FB25-4F6C-939E-706E3EED7230}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A12DFAA-E245-4F6D-95EC-EEC50E5EE8B9}
+	EndGlobalSection
+EndGlobal

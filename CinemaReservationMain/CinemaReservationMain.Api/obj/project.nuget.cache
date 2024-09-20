@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ifPPh0d82LTeleCYtHYlmbFzhYUjPlfhC6Nl2SGLd22lw3FsSZ1ugRSMdxF+OgKeosjqMvi8DPHdlFH6mwhCtQ==",
+  "dgSpecHash": "wBuIbsOMkobVlBMIUVl7S8w3g+UfezuIawBFyAO1B+1gdpVWkyZ81YZFr+RgMHWS1PB2Cq1TQV65H0hIQlZNEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\CinemaReservationMain\\CinemaReservationMain.Api\\CinemaReservationMain.Api.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\CinemaReservationMAIN\\CinemaReservationMain\\CinemaReservationMain.Api\\CinemaReservationMain.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

@@ -10,3 +10,16 @@ C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Core\ob
 C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\refint\CinemaReservationMain.Core.dll
 C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\CinemaReservationMain.Core.pdb
 C:\Users\Lenovo\source\repos\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\ref\CinemaReservationMain.Core.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\bin\Debug\net8.0\CinemaReservationMain.Core.deps.json
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\bin\Debug\net8.0\CinemaReservationMain.Core.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\bin\Debug\net8.0\CinemaReservationMain.Core.pdb
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\CinemaReservationMain.Core.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\CinemaReservationMain.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\CinemaReservationMain.Core.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\CinemaReservationMain.Core.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\CinemaReservationMain.Core.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\CinemaReservationMain.Core.sourcelink.json
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\CinemaReservationMain.Core.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\refint\CinemaReservationMain.Core.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\CinemaReservationMain.Core.pdb
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Core\obj\Debug\net8.0\ref\CinemaReservationMain.Core.dll

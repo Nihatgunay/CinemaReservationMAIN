@@ -8,8 +8,8 @@ namespace CinemaReservationMain.Business
 	{
 		public static void AddServices(this IServiceCollection services)
 		{
-			services.AddScoped<IAuthService, AuthService>();
-			services.AddScoped<ITheaterService, TheaterService>();
+			services.AddTransient<IAuthService, AuthService>();
+			services.AddTransient<ITheaterService, TheaterService>();
         }
 	}
 }

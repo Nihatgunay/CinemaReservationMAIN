@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VJQSqPrHH9DaTW6YDb/zlUXPyYOkJXkDRao0hcYyh/Y0Od0cMgMFwhlw92YvAu8u57WClkaqqUqIHUhSvzUMVA==",
+  "dgSpecHash": "OL5C7wv/yppMUnYZ5GKNljcAfb0wg5V5iSbUxlj7Ld+2jgPXkA00bAOAR+oGhoStnta4/0yMocBZGeLsaxY0zw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\CinemaReservationMain\\CinemaReservationMain.Core\\CinemaReservationMain.Core.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\CinemaReservationMAIN\\CinemaReservationMain\\CinemaReservationMain.Core\\CinemaReservationMain.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.8\\microsoft.aspnetcore.cryptography.internal.8.0.8.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.8\\microsoft.aspnetcore.cryptography.keyderivation.8.0.8.nupkg.sha512",

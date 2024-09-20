@@ -49,5 +49,63 @@ namespace CinemaReservationMain.Api.Controllers
             return Created();
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            TheaterGetDto dto = null;
+            try
+            {
+                dto = await _theaterService.GetById(id);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+
+            return Ok(new ApiResponse<TheaterGetDto>
+            {
+                Data = dto,
+                StatusCode = StatusCodes.Status200OK
+            });
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, TheaterUpdateDto dto)
+        {
+
+            try
+            {
+                await _theaterService.UpdateAsync(id, dto);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ApiResponse<TheaterUpdateDto>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
+            }
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                await _theaterService.DeleteAsync(id);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
+            }
+            return Ok();
+        }
     }
 }

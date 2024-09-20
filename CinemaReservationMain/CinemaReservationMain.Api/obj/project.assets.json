@@ -5296,11 +5296,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\CinemaReservationMain\\CinemaReservationMain.Api\\CinemaReservationMain.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\CinemaReservationMAIN\\CinemaReservationMain\\CinemaReservationMain.Api\\CinemaReservationMain.Api.csproj",
       "projectName": "CinemaReservationMain.Api",
-      "projectPath": "C:\\Users\\Lenovo\\source\\repos\\CinemaReservationMain\\CinemaReservationMain.Api\\CinemaReservationMain.Api.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\CinemaReservationMAIN\\CinemaReservationMain\\CinemaReservationMain.Api\\CinemaReservationMain.Api.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\source\\repos\\CinemaReservationMain\\CinemaReservationMain.Api\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\CinemaReservationMAIN\\CinemaReservationMain\\CinemaReservationMain.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5317,8 +5317,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Lenovo\\source\\repos\\CinemaReservationMain\\CinemaReservationMain.Business\\CinemaReservationMain.Business.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\CinemaReservationMain\\CinemaReservationMain.Business\\CinemaReservationMain.Business.csproj"
+            "C:\\Users\\Lenovo\\Desktop\\CinemaReservationMAIN\\CinemaReservationMain\\CinemaReservationMain.Business\\CinemaReservationMain.Business.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Desktop\\CinemaReservationMAIN\\CinemaReservationMain\\CinemaReservationMain.Business\\CinemaReservationMain.Business.csproj"
             }
           }
         }

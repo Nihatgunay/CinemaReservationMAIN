@@ -305,3 +305,9 @@ C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReserv
 C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Api\obj\Debug\net8.0\CinemaReservationMain.Api.pdb
 C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Api\obj\Debug\net8.0\CinemaReservationMain.Api.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Api\obj\Debug\net8.0\ref\CinemaReservationMain.Api.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

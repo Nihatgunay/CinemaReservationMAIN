@@ -8,8 +8,8 @@ namespace CinemaReservationMain.Data.Configurations
 	{
 		public void Configure(EntityTypeBuilder<SeatReservation> builder)
 		{
-			builder.HasOne(x=>x.ShowTime).WithMany(X=>X.SeatReservations).HasForeignKey(x=>x.ShowTimeId).OnDelete(DeleteBehavior.Cascade);
-
+			builder.HasOne(x=>x.Reservation).WithMany(x=>x.SeatReservations).HasForeignKey(x=>x.ReservationId).OnDelete(DeleteBehavior.Cascade);
+			builder.HasOne(x=>x.Reservation).WithMany(x=>x.SeatReservations).HasForeignKey(x=>x.ShowTimeId).OnDelete(DeleteBehavior.NoAction);
 		}
 	}
 }

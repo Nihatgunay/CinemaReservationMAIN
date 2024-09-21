@@ -108,10 +108,6 @@ namespace CinemaReservationMain.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AppUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -121,7 +117,7 @@ namespace CinemaReservationMain.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("ReservationId")
+                    b.Property<int>("ReservationId")
                         .HasColumnType("int");
 
                     b.Property<int>("SeatNumber")
@@ -134,10 +130,6 @@ namespace CinemaReservationMain.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AppUserId");
-
-                    b.HasIndex("ReservationId");
 
                     b.HasIndex("ShowTimeId");
 
@@ -438,7 +430,7 @@ namespace CinemaReservationMain.Data.Migrations
                         .IsRequired();
 
                     b.HasOne("CinemaReservationMain.Core.Models.ShowTime", "ShowTime")
-                        .WithMany()
+                        .WithMany("Reservations")
                         .HasForeignKey("ShowTimeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -450,15 +442,11 @@ namespace CinemaReservationMain.Data.Migrations
 
             modelBuilder.Entity("CinemaReservationMain.Core.Models.SeatReservation", b =>
                 {
-                    b.HasOne("CinemaReservationMain.Core.Models.AppUser", "AppUser")
-                        .WithMany()
-                        .HasForeignKey("AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CinemaReservationMain.Core.Models.Reservation", null)
+                    b.HasOne("CinemaReservationMain.Core.Models.Reservation", "Reservation")
                         .WithMany("SeatReservations")
-                        .HasForeignKey("ReservationId");
+                        .HasForeignKey("ShowTimeId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
 
                     b.HasOne("CinemaReservationMain.Core.Models.ShowTime", "ShowTime")
                         .WithMany("SeatReservations")
@@ -466,7 +454,7 @@ namespace CinemaReservationMain.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("AppUser");
+                    b.Navigation("Reservation");
 
                     b.Navigation("ShowTime");
                 });
@@ -553,6 +541,8 @@ namespace CinemaReservationMain.Data.Migrations
 
             modelBuilder.Entity("CinemaReservationMain.Core.Models.ShowTime", b =>
                 {
+                    b.Navigation("Reservations");
+
                     b.Navigation("SeatReservations");
                 });
 

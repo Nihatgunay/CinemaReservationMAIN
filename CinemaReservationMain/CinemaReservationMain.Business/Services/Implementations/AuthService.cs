@@ -54,8 +54,8 @@ namespace CinemaReservationMain.Business.Services.Implementations
 			};
 
 			claims.AddRange(roles.Select(x => new Claim(ClaimTypes.Role, x)));
-			string secretkey = _configuration.GetSection("JWT:secretKey").Value;
 			DateTime expiredt = DateTime.UtcNow.AddMinutes(1);
+			string secretkey = _configuration.GetSection("JWT:secretKey").Value;
 
 			SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretkey));
 			SigningCredentials signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
@@ -89,6 +89,12 @@ namespace CinemaReservationMain.Business.Services.Implementations
 				throw new NullReferenceException();
 			}
 
-		}
+            var member = await _userManager.FindByNameAsync(dto.UserName);
+
+            if (member is not null)
+            {
+                await _userManager.AddToRoleAsync(member, "Member");
+            }
+        }
 	}
 }

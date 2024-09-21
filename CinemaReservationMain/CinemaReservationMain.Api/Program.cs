@@ -1,12 +1,14 @@
+using System.Text;
 using CinemaReservationMain.Business;
+using CinemaReservationMain.Business.Dtos.ShowTimeDtos;
+using CinemaReservationMain.Business.MappingProfiles;
 using CinemaReservationMain.Core.Models;
 using CinemaReservationMain.Data;
 using CinemaReservationMain.Data.DAL;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Text;
 
 namespace CinemaReservationMain.Api
 {
@@ -18,7 +20,12 @@ namespace CinemaReservationMain.Api
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().AddFluentValidation(op =>
+            {
+                op.RegisterValidatorsFromAssembly(typeof(ShowTimeCreateDtoValidator).Assembly);
+            }).AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -34,6 +41,11 @@ namespace CinemaReservationMain.Api
 
                 opt.User.RequireUniqueEmail = true;
             }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+            builder.Services.AddAutoMapper(op =>
+            {
+                op.AddProfile<MapProfile>();
+            });
 
             builder.Services.AddAuthentication(opt =>
             {

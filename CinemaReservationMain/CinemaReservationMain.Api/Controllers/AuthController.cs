@@ -79,11 +79,11 @@ namespace CinemaReservationMain.Api.Controllers
         //[HttpGet("")]
         //public async Task<IActionResult> CreateAdmin()
         //{
-        //	AppUser appUser = await _userManager.FindByNameAsync("firstsuperadmin");
+        //    AppUser appUser = await _userManager.FindByNameAsync("Nihat123");
 
-        //	await _userManager.AddToRoleAsync(appUser, "SuperAdmin"); //pass - SuperAdm123@
+        //    await _userManager.AddToRoleAsync(appUser, "SuperAdmin"); //pass - Nihat123@
 
-        //	return Ok();
+        //    return Ok();
         //}
     }
 }

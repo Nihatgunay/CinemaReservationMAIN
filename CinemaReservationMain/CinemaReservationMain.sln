@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaReservationMain.Core", "CinemaReservationMain.Core\CinemaReservationMain.Core.csproj", "{97AF0C93-04F2-4288-8F30-7AD1EE00F821}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaReservationMain.Core", "CinemaReservationMain.Core\CinemaReservationMain.Core.csproj", "{97AF0C93-04F2-4288-8F30-7AD1EE00F821}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaReservationMain.Business", "CinemaReservationMain.Business\CinemaReservationMain.Business.csproj", "{100CC03F-0A87-44F6-883D-C5560A774284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaReservationMain.Business", "CinemaReservationMain.Business\CinemaReservationMain.Business.csproj", "{100CC03F-0A87-44F6-883D-C5560A774284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaReservationMain.Data", "CinemaReservationMain.Data\CinemaReservationMain.Data.csproj", "{27323CDA-E839-4918-9CF3-EE79B83F5CF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaReservationMain.Data", "CinemaReservationMain.Data\CinemaReservationMain.Data.csproj", "{27323CDA-E839-4918-9CF3-EE79B83F5CF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaReservationMain.Api", "CinemaReservationMain.Api\CinemaReservationMain.Api.csproj", "{F70CE73E-FB25-4F6C-939E-706E3EED7230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaReservationMain.Api", "CinemaReservationMain.Api\CinemaReservationMain.Api.csproj", "{F70CE73E-FB25-4F6C-939E-706E3EED7230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaReservationMain.Mvc", "CinemaReservationMain.Mvc\CinemaReservationMain.Mvc.csproj", "{765EE105-0179-4112-BCC5-1E8CC65CD448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F70CE73E-FB25-4F6C-939E-706E3EED7230}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F70CE73E-FB25-4F6C-939E-706E3EED7230}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F70CE73E-FB25-4F6C-939E-706E3EED7230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765EE105-0179-4112-BCC5-1E8CC65CD448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765EE105-0179-4112-BCC5-1E8CC65CD448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765EE105-0179-4112-BCC5-1E8CC65CD448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765EE105-0179-4112-BCC5-1E8CC65CD448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

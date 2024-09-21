@@ -37,7 +37,7 @@ namespace CinemaReservationMain.Business.Services.Implementations
             var theater = await _theaterRepository.GetByIdAsync(id);
             if (theater == null) throw new Exception("Theater not found.");
 
-            theater.IsDeleted = true;
+            _theaterRepository.Delete(theater);
             await _theaterRepository.CommitAsync();
         }
 

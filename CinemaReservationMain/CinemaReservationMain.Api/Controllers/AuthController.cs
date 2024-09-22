@@ -11,14 +11,10 @@ namespace CinemaReservationMain.Api.Controllers
 	[ApiController]
 	public class AuthController : ControllerBase
 	{
-		private readonly UserManager<AppUser> _userManager;
-		private readonly RoleManager<IdentityRole> _roleManager;
 		private readonly IAuthService _authService;
 
-		public AuthController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, IAuthService authService)
+		public AuthController(IAuthService authService)
 		{
-			_userManager = userManager;
-			_roleManager = roleManager;
 			_authService = authService;
 		}
 
@@ -33,9 +29,9 @@ namespace CinemaReservationMain.Api.Controllers
             {
                 return BadRequest();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(ex.Message);
             }
 
             return Ok();
@@ -65,15 +61,15 @@ namespace CinemaReservationMain.Api.Controllers
         //[HttpGet("")]
         //public async Task<IActionResult> CreateRole()
         //{
-        //	IdentityRole role1 = new IdentityRole("SuperAdmin");
-        //	IdentityRole role2 = new IdentityRole("Admin");
-        //	IdentityRole role3 = new IdentityRole("Member");
+        //    IdentityRole role1 = new IdentityRole("SuperAdmin");
+        //    IdentityRole role2 = new IdentityRole("Admin");
+        //    IdentityRole role3 = new IdentityRole("Member");
 
-        //	await _roleManager.CreateAsync(role1);
-        //	await _roleManager.CreateAsync(role2);
-        //	await _roleManager.CreateAsync(role3);
+        //    await _roleManager.CreateAsync(role1);
+        //    await _roleManager.CreateAsync(role2);
+        //    await _roleManager.CreateAsync(role3);
 
-        //	return Ok();
+        //    return Ok();
         //}
 
         //[HttpGet("")]

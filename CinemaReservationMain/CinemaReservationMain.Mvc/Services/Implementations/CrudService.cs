@@ -47,7 +47,8 @@ namespace CinemaReservationMain.Mvc.Services.Implementations
 
             if (!response.IsSuccessful)
             {
-                throw new Exception();
+				var errorMessage = $"Error: {response.StatusCode}. Content: {response.Content}";
+				throw new Exception(errorMessage);
             }
 
             return response.Data.Data;

@@ -15,15 +15,12 @@ namespace CinemaReservationMain.Business.Services.Implementations
 	{
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
-		private readonly RoleManager<IdentityRole> _roleManager;
 		private readonly IConfiguration _configuration;
 
-		public AuthService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
-							RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+		public AuthService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration configuration)
 		{
 			_userManager = userManager;
 			_signInManager = signInManager;
-			_roleManager = roleManager;
 			_configuration = configuration;
 		}
 
@@ -54,7 +51,7 @@ namespace CinemaReservationMain.Business.Services.Implementations
 			};
 
 			claims.AddRange(roles.Select(x => new Claim(ClaimTypes.Role, x)));
-			DateTime expiredt = DateTime.UtcNow.AddMinutes(1);
+			DateTime expiredt = DateTime.UtcNow.AddMinutes(10);
 			string secretkey = _configuration.GetSection("JWT:secretKey").Value;
 
 			SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretkey));
@@ -79,7 +76,8 @@ namespace CinemaReservationMain.Business.Services.Implementations
 			AppUser appUser = new AppUser()
 			{
 				Email = dto.Email,
-				UserName = dto.UserName
+				UserName = dto.UserName,
+				PhoneNumber = dto.PhoneNumber,
 			};
 
 			var result = await _userManager.CreateAsync(appUser, dto.Password);
@@ -93,7 +91,7 @@ namespace CinemaReservationMain.Business.Services.Implementations
 
             if (member is not null)
             {
-                await _userManager.AddToRoleAsync(member, "Member");
+                await _userManager.AddToRoleAsync(appUser, "Member");
             }
         }
 	}

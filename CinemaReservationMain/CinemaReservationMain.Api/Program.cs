@@ -27,8 +27,6 @@ namespace CinemaReservationMain.Api
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
 
             builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
             {
@@ -68,6 +66,8 @@ namespace CinemaReservationMain.Api
 
             builder.Services.AddRepositories(builder.Configuration.GetConnectionString("default"));
             builder.Services.AddServices();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 

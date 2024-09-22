@@ -8,7 +8,7 @@
         <div class="signup-content">
             <div class="signup-form">
                 <h2 class="form-title">Register</h2>
-                <form method="POST" class="register-form" id="register-form">
+                <form method="post" class="register-form" id="register-form">
                     <div class="form-group">
                         <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                         <input type="text" name="name" id="name" placeholder="Your Name" />
@@ -32,8 +32,8 @@
                 </form>
             </div>
             <div class="signup-image">
-                <figure><img src="~/login/images/signup-image.jpg" alt="sing up image"></figure>
-                <a asp-controller="account" asp-action="login" class="signup-image-link">Login</a>
+                <figure><img src="~/login/images/signup-image.jpg" alt="sign up image"></figure>
+                <a asp-controller="auth" asp-action="login" class="signup-image-link">Login</a>
             </div>
         </div>
     </div>

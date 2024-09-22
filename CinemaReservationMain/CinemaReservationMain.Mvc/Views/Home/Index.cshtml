@@ -1,16 +1,27 @@
-﻿
+﻿@model HomeVM
 
-	<div id="body" class="movies">
-		<h2>Movies</h2>
-		<ul>
-			<li>
-				<a href="movie-details.html"><img src="~/assets/images/baby-with-dog2.jpg" alt=""></a>
-				<h3>Movie Title</h3>
-				<p>
-					This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this websitetemplate, then don't hesitate to ask for help on the Forums. You can replace all this text.
-				</p>
-				<a href="movie-details.html">Read More</a>
-			</li>
-		</ul>
+<div class="container mt-5">
+	<div class="row">
+		@foreach (var item in Model.Movies)
+		{
+			<div class="col-md-3" style="margin-top: 20px">
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">@item.Title</h5>
+						<p class="card-text">@(item.Desc.Length > 100 ? item.Desc.Substring(0, 100) : item.Desc)</p>
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Genre: @item.Genre</li>
+						<li class="list-group-item">Duration: @item.Duration</li>
+						<li class="list-group-item">Rating: @item.Rating</li>
+					</ul>
+					<div class="card-body">
+						<a asp-action="create" asp-controller="reservation" asp-route-showTimeId="@item.Id" class="btn btn-primary">Reserve</a>
+						<a class="btn btn-success">Detail</a>
+					</div>
+				</div>
+			</div>
+		}
 	</div>
-	
+</div>
+

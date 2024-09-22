@@ -21,7 +21,7 @@ namespace CinemaReservationMain.Api.Controllers
         {
             return Ok(new ApiResponse<ICollection<ReservationGetDto>>
             {
-                Data = await _reservationService.GetByExpression(true, null, "SeatReservations"),
+                Data = await _reservationService.GetByExpression(true, null, "SeatReservations", "ShowTimes"),
                 ErrorMessage = null,
                 StatusCode = StatusCodes.Status200OK
             });
@@ -54,7 +54,7 @@ namespace CinemaReservationMain.Api.Controllers
             ReservationGetDto dto = null;
             try
             {
-                dto = await _reservationService.GetSingleByExpression(false, x => x.Id == id, "SeatReservations");
+                dto = await _reservationService.GetSingleByExpression(false, x => x.Id == id, "SeatReservations", "ShowTimes");
             }
             catch (Exception ex)
             {

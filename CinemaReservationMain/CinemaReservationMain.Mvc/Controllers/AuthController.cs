@@ -17,6 +17,7 @@ namespace CinemaReservationMain.Mvc.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Login(UserLoginVM vm)
         {

@@ -1,0 +1,33 @@
+﻿@model ReservationCreateVM
+
+@{
+    ViewBag.Title = "Create Reservation";
+}
+
+<h2>Create Reservation for ShowTime: @ViewBag.ShowTime.MovieTitle</h2>
+
+<form asp-action="Create" method="post">
+    <input type="hidden" asp-for="ShowTimeId" />
+
+    <div class="form-group">
+        <label asp-for="ReservationDate">Reservation Date</label>
+        <input asp-for="ReservationDate" class="form-control" type="datetime-local" />
+    </div>
+
+    <h3>Select Seats</h3>
+    <div class="form-group">
+        @foreach (var seat in Model.SeatReservations)
+        {
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="SeatReservations[@seat.SeatNumber].IsBooked" value="true"
+                @(seat.IsBooked ? "checked disabled" : "") />
+                <label class="form-check-label">
+                    Seat @seat.SeatNumber
+                </label>
+                <input type="hidden" name="SeatReservations[@seat.SeatNumber].SeatNumber" value="@seat.SeatNumber" />
+            </div>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Reserve</button>
+</form>

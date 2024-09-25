@@ -23,19 +23,49 @@ namespace CinemaReservationMain.Mvc.Services.Implementations
             var request = new RestRequest("/Auth/Login", Method.Post);
             request.AddJsonBody(vm);
 
-            var response = await _restClient.ExecuteAsync<ApiResponseMessage<LoginResponseVM>>(request);
-
+            var response = await _restClient.ExecuteAsync<LoginResponseVM>(request);
+            
             if (!response.IsSuccessful)
             {
                 throw new Exception("couldnt login");
             }
 
-            return response.Data.Data;
+            return response.Data;
+        }
+
+        public async Task<LoginResponseVM> AdminLogin(UserLoginVM vm)
+        {
+            var request = new RestRequest("/Auth/AdminLogin", Method.Post);
+            request.AddJsonBody(vm);
+
+            var response = await _restClient.ExecuteAsync<LoginResponseVM>(request);
+
+            if (!response.IsSuccessful)
+            {
+                throw new Exception("couldnt login admin");
+            }
+
+            return response.Data;
         }
 
         public void Logout()
         {
             _httpContextAccessor.HttpContext.Response.Cookies.Delete("token");
+        }
+
+        public async Task<bool> Register(UserRegisterVM vm)
+        {
+            var request = new RestRequest("/Auth/Register", Method.Post);
+            request.AddJsonBody(vm);
+
+            var response = await _restClient.ExecuteAsync(request);
+
+            if (!response.IsSuccessful)
+            {
+                throw new Exception("couldntt register1");
+            }
+
+            return response.IsSuccessful;
         }
     }
 }

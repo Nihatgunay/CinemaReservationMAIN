@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Mvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Lenovo/Desktop/CinemaReservationMAIN/CinemaReservationMain/CinemaReservationMain.Mvc/Areas/Admin/Views/Auth/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aFxBZG1pbkxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/CinemaReservationMAIN/CinemaReservationMain/CinemaReservationMain.Mvc/Areas/Admin/Views/Auth/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/Desktop/CinemaReservationMAIN/CinemaReservationMain/CinemaReservationMain.Mvc/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Lenovo/Desktop/CinemaReservationMAIN/CinemaReservationMain/CinemaReservationMain.Mvc/Areas/Admin/Views/Movie/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/CinemaReservationMAIN/CinemaReservationMain/CinemaReservationMain.Mvc/Areas/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/Desktop/CinemaReservationMAIN/CinemaReservationMain/CinemaReservationMain.Mvc/Areas/Admin/Views/Shared/_Layout.cshtml]
@@ -90,8 +102,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/CinemaReservationMAIN/CinemaReservationMain/CinemaReservationMain.Mvc/Views/Reservation/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Lenovo/Desktop/CinemaReservationMAIN/CinemaReservationMain/CinemaReservationMain.Mvc/Views/Reservation/Confirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/Desktop/CinemaReservationMAIN/CinemaReservationMain/CinemaReservationMain.Mvc/Views/Shared/Error.cshtml]

@@ -1,5 +1,6 @@
 ﻿using CinemaReservationMain.Api.ApiResponses;
 using CinemaReservationMain.Business.Dtos.ReservationDtos;
+using CinemaReservationMain.Business.Dtos.SeatReservationDtos;
 using CinemaReservationMain.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +22,7 @@ namespace CinemaReservationMain.Api.Controllers
         {
             return Ok(new ApiResponse<ICollection<ReservationGetDto>>
             {
-                Data = await _reservationService.GetByExpression(true, null, "SeatReservations", "ShowTimes"),
+                Data = await _reservationService.GetByExpression(true, null, "SeatReservations", "ShowTime"),
                 ErrorMessage = null,
                 StatusCode = StatusCodes.Status200OK
             });
@@ -47,6 +48,7 @@ namespace CinemaReservationMain.Api.Controllers
 
             return Created();
         }
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)

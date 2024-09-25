@@ -9,7 +9,6 @@ namespace CinemaReservationMain.Mvc
         {
             services.AddScoped<ICrudService, CrudService>();
             services.AddScoped<IAuthService, AuthService>();
-			
 		}
     }
 }

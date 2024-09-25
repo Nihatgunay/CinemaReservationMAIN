@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using CinemaReservationMain.Mvc.Areas.Admin.ViewModels.ShowTimeVMs;
 
 namespace CinemaReservationMain.Mvc.Areas.Admin.ViewModels.MovieVMs
 {
@@ -10,5 +11,5 @@ namespace CinemaReservationMain.Mvc.Areas.Admin.ViewModels.MovieVMs
 		public double Duration { get; set; }
 		public double Rating { get; set; }
 		public string Genre { get; set; }
-	}
+    }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Zgoa1mfiK7oyUVCJ85HnGGl6xjrxBWCk8cfNLty7tTm2k6i1ERFwZ3pRHZvbv+hxjSPesHYEnUOK+WqlKvP+LA==",
+  "dgSpecHash": "AWenBKHgIHEvI9LOYQkgsJciKuRoV8hZoAxszI3lCmLVoNiPhFUw04PD6khu+nfMZvJqr3Zaa8EwmMzMvIptpg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\CinemaReservationMAIN\\CinemaReservationMain\\CinemaReservationMain.Mvc\\CinemaReservationMain.Mvc.csproj",
   "expectedPackageFiles": [
@@ -74,6 +74,10 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.1\\microsoft.extensions.dependencymodel.8.0.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.2\\microsoft.identitymodel.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.0.2\\microsoft.identitymodel.jsonwebtokens.8.0.2.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.2\\microsoft.identitymodel.logging.8.0.2.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.2\\microsoft.identitymodel.tokens.8.0.2.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.net.stringtools\\17.8.3\\microsoft.net.stringtools.17.8.3.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\8.0.5\\microsoft.visualstudio.web.codegeneration.8.0.5.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\8.0.5\\microsoft.visualstudio.web.codegeneration.core.8.0.5.nupkg.sha512",
@@ -108,6 +112,7 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.diagnostics.eventlog\\7.0.0\\system.diagnostics.eventlog.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.2\\system.identitymodel.tokens.jwt.8.0.2.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.reflection.metadataloadcontext\\7.0.0\\system.reflection.metadataloadcontext.7.0.0.nupkg.sha512",

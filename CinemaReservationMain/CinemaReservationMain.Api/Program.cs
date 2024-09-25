@@ -80,6 +80,7 @@ namespace CinemaReservationMain.Api
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

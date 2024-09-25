@@ -1,0 +1,29 @@
+﻿@model ReservationGetVM
+
+<div class="container mt-5">
+    <h2>Reservation Confirmation</h2>
+    <p>Thank you for your reservation!</p>
+
+    <div>
+        <strong>Reservation ID:</strong> @Model.Id
+    </div>
+    <div>
+        <strong>Reservation Date:</strong> @Model.ReservationDate
+    </div>
+    <div>
+        <strong>Movie Title:</strong> @Model.MovieTitle
+    </div>
+    <div>
+        <strong>Theater:</strong> @Model.TheaterName
+    </div>
+    <div>
+        <strong>Showtime:</strong> @Model.ShowTimeStart - @Model.ShowTimeEnd
+    </div>
+    <div>
+        <strong>Seats:</strong>
+        @foreach (var seat in Model.SeatReservations)
+        {
+            <span>@seat.SeatNumber</span>
+        }
+    </div>
+</div>

@@ -226,3 +226,8 @@ C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReserv
 C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Mvc\obj\Debug\net8.0\CinemaReservationMain.Mvc.pdb
 C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Mvc\obj\Debug\net8.0\CinemaReservationMain.Mvc.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Mvc\obj\Debug\net8.0\ref\CinemaReservationMain.Mvc.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Mvc\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Mvc\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Mvc\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Mvc\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Lenovo\Desktop\CinemaReservationMAIN\CinemaReservationMain\CinemaReservationMain.Mvc\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

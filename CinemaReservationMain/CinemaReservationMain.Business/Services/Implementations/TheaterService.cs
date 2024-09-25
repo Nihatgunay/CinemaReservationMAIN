@@ -20,7 +20,14 @@ namespace CinemaReservationMain.Business.Services.Implementations
         }
         public async Task<TheaterGetDto> CreateAsync(TheaterCreateDto dto)
         {
-            var theater = _mapper.Map<Theater>(dto);
+			var existingTheater = await _theaterRepository
+		    .GetByExpression(false, t => t.Name == dto.Name)
+		    .FirstOrDefaultAsync();
+
+			if (existingTheater != null)
+				throw new Exception("A theater with the same name already exists.");
+
+			var theater = _mapper.Map<Theater>(dto);
             theater.CreatedDate = DateTime.Now;
             theater.UpdatedDate = DateTime.Now;
 
@@ -73,7 +80,14 @@ namespace CinemaReservationMain.Business.Services.Implementations
             var theater = await _theaterRepository.GetByIdAsync((int)id);
             if (theater == null) throw new Exception("Theater not found");
 
-            _mapper.Map(dto, theater);
+			var existingTheater = await _theaterRepository
+		    .GetByExpression(true, t => t.Name == dto.Name && t.Id != id)
+		    .FirstOrDefaultAsync();
+
+			if (existingTheater != null)
+				throw new Exception("a theater with the same name already exists");
+
+			_mapper.Map(dto, theater);
 
             theater.UpdatedDate = DateTime.Now;
 

@@ -28,7 +28,7 @@ namespace CinemaReservationMain.Mvc.Controllers
 
             if (data == null)
             {
-                ModelState.AddModelError("", "couldnt login");
+                ModelState.AddModelError("", "couldnt login2");
                 return View();
             }
 
@@ -39,6 +39,37 @@ namespace CinemaReservationMain.Mvc.Controllers
             });
 
             return RedirectToAction("index", "home");
+        }
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(UserRegisterVM vm)
+        {
+            if (!ModelState.IsValid) return View();
+
+            try
+            {
+                var data = await _authService.Register(vm);
+
+                if (data)
+                {
+                    return RedirectToAction("Login");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "couldnt register 2");
+                    return View();
+                }
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View();
+            }
         }
 
         public IActionResult Logout()

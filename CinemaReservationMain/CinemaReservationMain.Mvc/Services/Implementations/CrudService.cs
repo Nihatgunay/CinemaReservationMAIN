@@ -1,4 +1,5 @@
 ﻿using CinemaReservationMain.Mvc.ApiResponseMessages;
+using CinemaReservationMain.Mvc.Areas.Admin.ViewModels.MovieVMs;
 using CinemaReservationMain.Mvc.Services.Interfaces;
 using RestSharp;
 
@@ -74,6 +75,7 @@ namespace CinemaReservationMain.Mvc.Services.Implementations
 
             return response.Data.Data;
         }
+
 
         public async Task Update<T>(string endpoint, T entity) where T : class
         {

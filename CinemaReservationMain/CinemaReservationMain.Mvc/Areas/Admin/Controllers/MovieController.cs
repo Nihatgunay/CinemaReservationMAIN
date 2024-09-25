@@ -1,11 +1,13 @@
 ﻿using CinemaReservationMain.Mvc.Areas.Admin.ViewModels.MovieVMs;
 using CinemaReservationMain.Mvc.Exceptions.Common;
 using CinemaReservationMain.Mvc.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CinemaReservationMain.Mvc.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	//[Authorize(Roles = "SuperAdmin, Admin")]
 	public class MovieController : Controller
 	{
 		private readonly ICrudService _crudService;
@@ -17,10 +19,6 @@ namespace CinemaReservationMain.Mvc.Areas.Admin.Controllers
 
 		public async Task<IActionResult> Index()
 		{
-			//if (Request.Cookies["token"] == null)
-			//{
-			//	return RedirectToAction("login", "auth");
-			//}
 			var datas = await _crudService.GetAllAsync<List<MovieGetVM>>("/Movies");
 
 			return View(datas);

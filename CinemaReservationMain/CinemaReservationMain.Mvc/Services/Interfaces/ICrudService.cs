@@ -1,4 +1,6 @@
-﻿namespace CinemaReservationMain.Mvc.Services.Interfaces
+﻿using CinemaReservationMain.Mvc.Areas.Admin.ViewModels.MovieVMs;
+
+namespace CinemaReservationMain.Mvc.Services.Interfaces
 {
     public interface ICrudService
     {

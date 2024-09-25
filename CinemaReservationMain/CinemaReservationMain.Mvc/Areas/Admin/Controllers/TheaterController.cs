@@ -1,11 +1,14 @@
 ﻿using CinemaReservationMain.Mvc.Areas.Admin.ViewModels.TheaterVMs;
 using CinemaReservationMain.Mvc.Exceptions.Common;
 using CinemaReservationMain.Mvc.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CinemaReservationMain.Mvc.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	//[Authorize(Roles = "SuperAdmin, Admin")]
 	public class TheaterController : Controller
 	{
 		private readonly ICrudService _crudService;
@@ -17,10 +20,6 @@ namespace CinemaReservationMain.Mvc.Areas.Admin.Controllers
 
 		public async Task<IActionResult> Index()
 		{
-			//if (Request.Cookies["token"] == null)
-			//{
-			//	return RedirectToAction("login", "auth");
-			//}
 			var datas = await _crudService.GetAllAsync<List<TheaterGetVM>>("/Theaters");
 
 			return View(datas);
@@ -73,10 +72,20 @@ namespace CinemaReservationMain.Mvc.Areas.Admin.Controllers
 		}
 
 		public async Task<IActionResult> Update(int id)
-		{
-			var data = await _crudService.GetByIdAsync<TheaterUpdateVM>($"/Theaters/{id}", id);
+        {
+			TheaterUpdateVM data = null;
 
-			return View(data);
+            try
+			{
+                data = await _crudService.GetByIdAsync<TheaterUpdateVM>($"/Theaters/{id}", id);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View(data);
+            }
+
+            return View(data);
 		}
 
 		[HttpPost]

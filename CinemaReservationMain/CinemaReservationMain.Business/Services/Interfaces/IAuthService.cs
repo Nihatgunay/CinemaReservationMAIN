@@ -6,7 +6,7 @@ namespace CinemaReservationMain.Business.Services.Interfaces
 	public interface IAuthService
 	{
 		Task Register(UserRegisterDto dto);
-
 		Task<TokenResponseDto> Login(UserLoginDto dto);
-	}
+		Task<TokenResponseDto> AdminLogin(UserLoginDto dto);
+    }
 }

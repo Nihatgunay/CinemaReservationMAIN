@@ -1,7 +1,6 @@
 ﻿using CinemaReservationMain.Api.ApiResponses;
 using CinemaReservationMain.Business.Dtos.ShowTimeDtos;
 using CinemaReservationMain.Business.Services.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CinemaReservationMain.Api.Controllers

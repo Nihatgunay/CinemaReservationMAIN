@@ -11,8 +11,6 @@ namespace CinemaReservationMain.Business.Dtos.UserDtos
 			RuleFor(x => x.UserName).NotNull().NotEmpty().MaximumLength(60);
 
 			RuleFor(x => x.Password).NotEmpty().NotNull();
-
-			RuleFor(x => x.RememberMe).NotEmpty();
 		}
 	}
 }

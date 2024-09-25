@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace CinemaReservationMain.Mvc
@@ -10,8 +12,10 @@ namespace CinemaReservationMain.Mvc
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
             builder.Services.AddRegisterService();
             builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            builder.Services.AddHttpClient();
 
             var app = builder.Build();
 

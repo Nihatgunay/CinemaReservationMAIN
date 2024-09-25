@@ -11,11 +11,13 @@ namespace CinemaReservationMain.Api.Controllers
 	[ApiController]
 	public class AuthController : ControllerBase
 	{
-		private readonly IAuthService _authService;
+        private readonly UserManager<AppUser> _userManager;
+        private readonly IAuthService _authService;
 
-		public AuthController(IAuthService authService)
+		public AuthController(UserManager<AppUser> userManager, IAuthService authService)
 		{
-			_authService = authService;
+            _userManager = userManager;
+            _authService = authService;
 		}
 
         [HttpPost("[action]")]
@@ -58,6 +60,25 @@ namespace CinemaReservationMain.Api.Controllers
             return Ok(rDto);
         }
 
+        [HttpPost("[action]")]
+        public async Task<IActionResult> AdminLogin(UserLoginDto dto)
+        {
+            TokenResponseDto rDto = null;
+            try
+            {
+                rDto = await _authService.AdminLogin(dto);
+                return Ok(rDto);
+            }
+            catch (NullReferenceException)
+            {
+                return BadRequest();
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
         //[HttpGet("")]
         //public async Task<IActionResult> CreateRole()
         //{
@@ -75,9 +96,9 @@ namespace CinemaReservationMain.Api.Controllers
         //[HttpGet("")]
         //public async Task<IActionResult> CreateAdmin()
         //{
-        //    AppUser appUser = await _userManager.FindByNameAsync("Nihat123");
+        //    AppUser appUser = await _userManager.FindByNameAsync("Druly123");
 
-        //    await _userManager.AddToRoleAsync(appUser, "SuperAdmin"); //pass - Nihat123@
+        //    await _userManager.AddToRoleAsync(appUser, "SuperAdmin");
 
         //    return Ok();
         //}

@@ -1,6 +1,7 @@
 ﻿using CinemaReservationMain.Mvc.Areas.Admin.ViewModels.TheaterVMs;
 using CinemaReservationMain.Mvc.Exceptions.Common;
 using CinemaReservationMain.Mvc.Services.Interfaces;
+using Humanizer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -59,14 +60,30 @@ namespace CinemaReservationMain.Mvc.Areas.Admin.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Create(TheaterCreateVM vm)
 		{
-			await _crudService.Create("/Theaters", vm);
+			try
+			{
+				await _crudService.Create("/Theaters", vm);
+			}
+			catch (Exception ex)
+			{
+				ModelState.AddModelError("", "cant be null");
+				return View();
+			}
 
 			return RedirectToAction(nameof(Index));
 		}
 
 		public async Task<IActionResult> Delete(int id)
 		{
-			await _crudService.Delete<object>($"/Theaters/{id}", id);
+			try
+			{
+				await _crudService.Delete<object>($"/Theaters/{id}", id);
+			}
+			catch (Exception ex)
+			{
+				TempData["Err"] = "not found";
+				return View("Error");
+			}
 
 			return RedirectToAction(nameof(Index));
 		}
@@ -81,7 +98,7 @@ namespace CinemaReservationMain.Mvc.Areas.Admin.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError("", ex.Message);
+                ModelState.AddModelError("", "Entity not found, changes will not be saved");
                 return View(data);
             }
 

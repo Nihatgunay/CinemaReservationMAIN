@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CinemaReservationMain.Mvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36ac3627087c2f242674b16bdcbc6d21df076e5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e3ca421c88de7438b23a854ac905d9b0611a048")]
 [assembly: System.Reflection.AssemblyProductAttribute("CinemaReservationMain.Mvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CinemaReservationMain.Mvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

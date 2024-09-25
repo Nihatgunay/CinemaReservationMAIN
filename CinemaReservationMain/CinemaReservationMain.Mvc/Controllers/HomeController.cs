@@ -23,28 +23,45 @@ namespace CinemaReservationMain.Mvc.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            string token = HttpContext.Request.Cookies["token"];
-            var secret = "sdfgdf-463dgdfsd j-fdvnji2387nGood";
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(secret);
-            string username = null;
-            ClaimsPrincipal claimsPrincipal = null;
-            if (token is not null)
-            {
-                claimsPrincipal = tokenHandler.ValidateToken(token, new TokenValidationParameters()
-                {
-                    ValidateIssuer = false,
-                    ValidateAudience = false,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key)
-                }, out SecurityToken validatedToken);
-                username = claimsPrincipal.Identity.Name;
-            }
+			string token = HttpContext.Request.Cookies["token"];
+			if (token == null)
+			{
+				return Unauthorized();
+			}
 
-            ViewBag.UserName = username;
+			var secretKey = "";
 
-            var movies = await _crudService.GetAllAsync<List<MovieGetVM>>("/movies");
+			var tokenHandler = new JwtSecurityTokenHandler();
+			var key = Encoding.ASCII.GetBytes(secretKey);
+			ClaimsPrincipal claimsPrincipal = null;
+
+			try
+			{
+				claimsPrincipal = tokenHandler.ValidateToken(token, new TokenValidationParameters()
+				{
+					ValidateIssuer = false,
+					ValidateAudience = false,
+					ValidateLifetime = true,
+					ValidateIssuerSigningKey = true,
+					IssuerSigningKey = new SymmetricSecurityKey(key)
+				}, out SecurityToken validatedToken);
+			}
+			catch (SecurityTokenException)
+			{
+				return Unauthorized();
+			}
+
+			string username = claimsPrincipal?.Identity?.Name;
+
+			if (username == null)
+			{
+				return Unauthorized();
+			}
+
+			ViewBag.UserName = username;
+
+
+			var movies = await _crudService.GetAllAsync<List<MovieGetVM>>("/movies");
 
             var showtimes = await _crudService.GetAllAsync<List<ShowTimeGetVM>>("/showtimes");
 

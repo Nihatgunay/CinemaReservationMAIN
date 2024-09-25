@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 namespace CinemaReservationMain.Mvc.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    //[Authorize(Roles = "SuperAdmin, Admin")]
     public class HomeController : Controller
     {
         public IActionResult Index()
